@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Signup Form</title>
+  <style>
+    body {
+      background-image: url("C:https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv-8ryejPqDQbwMosizGlVMmNbzFUL7BaPgg&s");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    form {
+      text-align: center;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 50px; /* increased padding */
+      border-radius: 15px;
+      width: 400px; /* bigger width */
+    }
+
+    h2, h3, label {
+      color: white;
+      font-size: 20px; /* larger text */
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 90%; /* larger input fields */
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    input[type="submit"] {
+      width: 95%;
+      padding: 14px;
+      background-color: #4CAF50;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+
+<body>
+
+  <form action="/submit-signup" method="post">
+    <h2>Signup Form</h2>
+
+    <h3><label for="name">Name:</label></h3>
+    <input type="text" id="name" name="name" required><br>
+
+    <h3><label for="email">Email:</label></h3>
+    <input type="email" id="email" name="email" required><br>
+
+    <h3><label for="password">Password:</label></h3>
+    <input type="password" id="password" name="password" required><br>
+
+    <input type="submit" value="Sign Up">
+  </form>
+
+</body>
+</html>
+
